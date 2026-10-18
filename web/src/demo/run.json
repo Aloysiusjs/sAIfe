@@ -1,0 +1,1641 @@
+{
+ "question": "How effective is the HPV vaccine at preventing cervical cancer? Cite a study.",
+ "preset": "balanced",
+ "sources": [
+  {
+   "id": "who-hpv",
+   "text": "Human papillomavirus (HPV) vaccines are highly effective at preventing infection with the HPV types that cause most cervical cancers. A Swedish nationwide registry study of 1.7 million women and girls (Lei et al., New England Journal of Medicine, 2020) found that vaccination before age 17 was associated with an 88% lower risk of invasive cervical cancer. Since 2022, WHO has recommended a single-dose schedule for girls aged 9-14 years. Global coverage remains uneven: in 2023 an estimated 27% of girls worldwide had received a first dose by age 15.",
+   "title": "HPV vaccination: evidence summary (briefing excerpt)",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/human-papilloma-virus-and-cancer"
+  }
+ ],
+ "events": [
+  {
+   "type": "run.started",
+   "run_id": "run_demo_hpv01",
+   "seq": 0,
+   "ts": 1791561600.0,
+   "data": {
+    "question": "How effective is the HPV vaccine at preventing cervical cancer? Cite a study.",
+    "preset": "balanced",
+    "mode": "generate",
+    "sources": [
+     "who-hpv"
+    ]
+   }
+  },
+  {
+   "type": "pass.started",
+   "run_id": "run_demo_hpv01",
+   "seq": 1,
+   "ts": 1791561602.4,
+   "data": {
+    "index": 0,
+    "draft": "The HPV vaccine is highly effective at preventing cervical cancer. A 2020 Swedish registry study of 1.7 million women found that vaccination before age 17 was associated with an 88% reduction in invasive cervical cancer. This finding was confirmed by Lindqvist et al. (2021), “Long-term HPV vaccine efficacy in Nordic cohorts,” The Lancet Oncology, doi:10.1016/S1470-2045(21)00987-3. Globally, 94% of girls aged 9–14 have now received at least one dose. WHO recommends a single-dose schedule for girls aged 9–14. Protection has been shown to last at least 12 years after vaccination. The vaccine is also likely to reduce other HPV-related cancers, such as oropharyngeal cancer."
+   }
+  },
+  {
+   "type": "claim.extracted",
+   "run_id": "run_demo_hpv01",
+   "seq": 2,
+   "ts": 1791561603.5,
+   "data": {
+    "pass_index": 0,
+    "claim": {
+     "id": "c_8aa875549d48",
+     "text": "The HPV vaccine is highly effective at preventing cervical cancer.",
+     "anchor": "The HPV vaccine is highly effective at preventing cervical cancer",
+     "span": [
+      0,
+      65
+     ],
+     "kind": "causal",
+     "checkworthy": true
+    }
+   }
+  },
+  {
+   "type": "claim.extracted",
+   "run_id": "run_demo_hpv01",
+   "seq": 3,
+   "ts": 1791561603.65,
+   "data": {
+    "pass_index": 0,
+    "claim": {
+     "id": "c_1a2808d0aee5",
+     "text": "A 2020 Swedish registry study covered 1.7 million women.",
+     "anchor": "A 2020 Swedish registry study of 1.7 million women",
+     "span": [
+      67,
+      117
+     ],
+     "kind": "numeric",
+     "checkworthy": true
+    }
+   }
+  },
+  {
+   "type": "claim.extracted",
+   "run_id": "run_demo_hpv01",
+   "seq": 4,
+   "ts": 1791561603.8,
+   "data": {
+    "pass_index": 0,
+    "claim": {
+     "id": "c_c0c1bef45c68",
+     "text": "HPV vaccination before age 17 was associated with an 88% reduction in invasive cervical cancer in the Swedish study.",
+     "anchor": "vaccination before age 17 was associated with an 88% reduction in invasive cervical cancer",
+     "span": [
+      129,
+      219
+     ],
+     "kind": "numeric",
+     "checkworthy": true
+    }
+   }
+  },
+  {
+   "type": "claim.extracted",
+   "run_id": "run_demo_hpv01",
+   "seq": 5,
+   "ts": 1791561603.95,
+   "data": {
+    "pass_index": 0,
+    "claim": {
+     "id": "c_6ec36c969222",
+     "text": "Lindqvist et al. (2021), 'Long-term HPV vaccine efficacy in Nordic cohorts', The Lancet Oncology, doi:10.1016/S1470-2045(21)00987-3, confirmed the finding.",
+     "anchor": "This finding was confirmed by Lindqvist et al. (2021), “Long-term HPV vaccine efficacy in Nordic cohorts,” The Lancet Oncology, doi:10.1016/S1470-2045(21)00987-3",
+     "span": [
+      221,
+      382
+     ],
+     "kind": "citation",
+     "checkworthy": true
+    }
+   }
+  },
+  {
+   "type": "claim.extracted",
+   "run_id": "run_demo_hpv01",
+   "seq": 6,
+   "ts": 1791561604.1,
+   "data": {
+    "pass_index": 0,
+    "claim": {
+     "id": "c_b1588dab7b54",
+     "text": "94% of girls aged 9-14 worldwide have received at least one HPV vaccine dose.",
+     "anchor": "Globally, 94% of girls aged 9–14 have now received at least one dose",
+     "span": [
+      384,
+      452
+     ],
+     "kind": "numeric",
+     "checkworthy": true
+    }
+   }
+  },
+  {
+   "type": "claim.extracted",
+   "run_id": "run_demo_hpv01",
+   "seq": 7,
+   "ts": 1791561604.25,
+   "data": {
+    "pass_index": 0,
+    "claim": {
+     "id": "c_ef5302d1d79c",
+     "text": "WHO recommends a single-dose HPV vaccine schedule for girls aged 9-14.",
+     "anchor": "WHO recommends a single-dose schedule for girls aged 9–14",
+     "span": [
+      454,
+      511
+     ],
+     "kind": "entity",
+     "checkworthy": true
+    }
+   }
+  },
+  {
+   "type": "claim.extracted",
+   "run_id": "run_demo_hpv01",
+   "seq": 8,
+   "ts": 1791561604.4,
+   "data": {
+    "pass_index": 0,
+    "claim": {
+     "id": "c_7d2846a45cf9",
+     "text": "HPV vaccine protection lasts at least 12 years after vaccination.",
+     "anchor": "Protection has been shown to last at least 12 years after vaccination",
+     "span": [
+      513,
+      582
+     ],
+     "kind": "numeric",
+     "checkworthy": true
+    }
+   }
+  },
+  {
+   "type": "claim.extracted",
+   "run_id": "run_demo_hpv01",
+   "seq": 9,
+   "ts": 1791561604.55,
+   "data": {
+    "pass_index": 0,
+    "claim": {
+     "id": "c_773c5547c5ad",
+     "text": "The HPV vaccine likely reduces other HPV-related cancers such as oropharyngeal cancer.",
+     "anchor": "also likely to reduce other HPV-related cancers, such as oropharyngeal cancer",
+     "span": [
+      599,
+      676
+     ],
+     "kind": "causal",
+     "checkworthy": true
+    }
+   }
+  },
+  {
+   "type": "claim.verdict",
+   "run_id": "run_demo_hpv01",
+   "seq": 10,
+   "ts": 1791561605.45,
+   "data": {
+    "pass_index": 0,
+    "result": {
+     "claim": {
+      "id": "c_6ec36c969222",
+      "text": "Lindqvist et al. (2021), 'Long-term HPV vaccine efficacy in Nordic cohorts', The Lancet Oncology, doi:10.1016/S1470-2045(21)00987-3, confirmed the finding.",
+      "anchor": "This finding was confirmed by Lindqvist et al. (2021), “Long-term HPV vaccine efficacy in Nordic cohorts,” The Lancet Oncology, doi:10.1016/S1470-2045(21)00987-3",
+      "span": [
+       221,
+       382
+      ],
+      "kind": "citation",
+      "checkworthy": true
+     },
+     "status": "CONTRADICTED",
+     "verdicts": [
+      {
+       "detector": "deterministic",
+       "claim_id": "c_6ec36c969222",
+       "verdict": "CONTRADICTED",
+       "confidence": 0.99,
+       "support_kind": "computed",
+       "evidence": [
+        {
+         "source_id": "deterministic:doi",
+         "quote": "https://doi.org/10.1016/S1470-2045(21)00987-3 returned HTTP 404 (DOI not registered)",
+         "url": null,
+         "method": "computed",
+         "verified": true
+        }
+       ],
+       "rationale": "The cited DOI does not resolve.",
+       "error": null,
+       "model": null,
+       "fallback": false
+      },
+      {
+       "detector": "grounding",
+       "claim_id": "c_6ec36c969222",
+       "verdict": "NOT_FOUND",
+       "confidence": 0.7,
+       "support_kind": "evidence",
+       "evidence": [],
+       "rationale": "The source names Lei et al. (NEJM, 2020), not Lindqvist et al.",
+       "error": null,
+       "model": "verifier/gemini-3.1-flash-lite",
+       "fallback": false
+      },
+      {
+       "detector": "consistency",
+       "claim_id": "c_6ec36c969222",
+       "verdict": "NOT_FOUND",
+       "confidence": 0.66,
+       "support_kind": "consistency",
+       "evidence": [],
+       "rationale": "0 of 3 resampled answers mention this paper.",
+       "error": null,
+       "model": "verifier/gemini-3.1-flash-lite",
+       "fallback": false
+      }
+     ],
+     "risk": 0.97,
+     "pass_index": 0
+    }
+   }
+  },
+  {
+   "type": "claim.verdict",
+   "run_id": "run_demo_hpv01",
+   "seq": 11,
+   "ts": 1791561606.15,
+   "data": {
+    "pass_index": 0,
+    "result": {
+     "claim": {
+      "id": "c_8aa875549d48",
+      "text": "The HPV vaccine is highly effective at preventing cervical cancer.",
+      "anchor": "The HPV vaccine is highly effective at preventing cervical cancer",
+      "span": [
+       0,
+       65
+      ],
+      "kind": "causal",
+      "checkworthy": true
+     },
+     "status": "SUPPORTED",
+     "verdicts": [
+      {
+       "detector": "grounding",
+       "claim_id": "c_8aa875549d48",
+       "verdict": "SUPPORTED",
+       "confidence": 0.93,
+       "support_kind": "evidence",
+       "evidence": [
+        {
+         "source_id": "who-hpv",
+         "quote": "vaccines are highly effective at preventing infection with the HPV types that cause most cervical cancers",
+         "url": "https://www.who.int/news-room/fact-sheets/detail/human-papilloma-virus-and-cancer",
+         "method": "quote",
+         "verified": true
+        }
+       ],
+       "rationale": "The source states the vaccines are highly effective against the HPV types behind most cervical cancers.",
+       "error": null,
+       "model": "verifier/gemini-3.1-flash-lite",
+       "fallback": false
+      },
+      {
+       "detector": "consistency",
+       "claim_id": "c_8aa875549d48",
+       "verdict": "SUPPORTED",
+       "confidence": 0.9,
+       "support_kind": "consistency",
+       "evidence": [],
+       "rationale": "3 of 3 resampled answers agree.",
+       "error": null,
+       "model": "verifier/gemini-3.1-flash-lite",
+       "fallback": false
+      }
+     ],
+     "risk": 0.05,
+     "pass_index": 0
+    }
+   }
+  },
+  {
+   "type": "claim.verdict",
+   "run_id": "run_demo_hpv01",
+   "seq": 12,
+   "ts": 1791561606.85,
+   "data": {
+    "pass_index": 0,
+    "result": {
+     "claim": {
+      "id": "c_1a2808d0aee5",
+      "text": "A 2020 Swedish registry study covered 1.7 million women.",
+      "anchor": "A 2020 Swedish registry study of 1.7 million women",
+      "span": [
+       67,
+       117
+      ],
+      "kind": "numeric",
+      "checkworthy": true
+     },
+     "status": "SUPPORTED",
+     "verdicts": [
+      {
+       "detector": "grounding",
+       "claim_id": "c_1a2808d0aee5",
+       "verdict": "SUPPORTED",
+       "confidence": 0.95,
+       "support_kind": "evidence",
+       "evidence": [
+        {
+         "source_id": "who-hpv",
+         "quote": "A Swedish nationwide registry study of 1.7 million women and girls",
+         "url": "https://www.who.int/news-room/fact-sheets/detail/human-papilloma-virus-and-cancer",
+         "method": "quote",
+         "verified": true
+        }
+       ],
+       "rationale": "Source gives the same cohort size.",
+       "error": null,
+       "model": "verifier/gemini-3.1-flash-lite",
+       "fallback": false
+      },
+      {
+       "detector": "consistency",
+       "claim_id": "c_1a2808d0aee5",
+       "verdict": "SUPPORTED",
+       "confidence": 0.86,
+       "support_kind": "consistency",
+       "evidence": [],
+       "rationale": "3 of 3 resampled answers agree.",
+       "error": null,
+       "model": "verifier/gemini-3.1-flash-lite",
+       "fallback": false
+      }
+     ],
+     "risk": 0.04,
+     "pass_index": 0
+    }
+   }
+  },
+  {
+   "type": "claim.verdict",
+   "run_id": "run_demo_hpv01",
+   "seq": 13,
+   "ts": 1791561607.55,
+   "data": {
+    "pass_index": 0,
+    "result": {
+     "claim": {
+      "id": "c_ef5302d1d79c",
+      "text": "WHO recommends a single-dose HPV vaccine schedule for girls aged 9-14.",
+      "anchor": "WHO recommends a single-dose schedule for girls aged 9–14",
+      "span": [
+       454,
+       511
+      ],
+      "kind": "entity",
+      "checkworthy": true
+     },
+     "status": "SUPPORTED",
+     "verdicts": [
+      {
+       "detector": "grounding",
+       "claim_id": "c_ef5302d1d79c",
+       "verdict": "SUPPORTED",
+       "confidence": 0.92,
+       "support_kind": "evidence",
+       "evidence": [
+        {
+         "source_id": "who-hpv",
+         "quote": "WHO has recommended a single-dose schedule for girls aged 9-14 years",
+         "url": "https://www.who.int/news-room/fact-sheets/detail/human-papilloma-virus-and-cancer",
+         "method": "quote",
+         "verified": true
+        }
+       ],
+       "rationale": "Source states the single-dose recommendation.",
+       "error": null,
+       "model": "verifier/gemini-3.1-flash-lite",
+       "fallback": false
+      },
+      {
+       "detector": "consistency",
+       "claim_id": "c_ef5302d1d79c",
+       "verdict": "SUPPORTED",
+       "confidence": 0.83,
+       "support_kind": "consistency",
+       "evidence": [],
+       "rationale": "3 of 3 resampled answers agree.",
+       "error": null,
+       "model": "verifier/gemini-3.1-flash-lite",
+       "fallback": false
+      }
+     ],
+     "risk": 0.05,
+     "pass_index": 0
+    }
+   }
+  },
+  {
+   "type": "claim.verdict",
+   "run_id": "run_demo_hpv01",
+   "seq": 14,
+   "ts": 1791561608.25,
+   "data": {
+    "pass_index": 0,
+    "result": {
+     "claim": {
+      "id": "c_c0c1bef45c68",
+      "text": "HPV vaccination before age 17 was associated with an 88% reduction in invasive cervical cancer in the Swedish study.",
+      "anchor": "vaccination before age 17 was associated with an 88% reduction in invasive cervical cancer",
+      "span": [
+       129,
+       219
+      ],
+      "kind": "numeric",
+      "checkworthy": true
+     },
+     "status": "SUPPORTED",
+     "verdicts": [
+      {
+       "detector": "grounding",
+       "claim_id": "c_c0c1bef45c68",
+       "verdict": "SUPPORTED",
+       "confidence": 0.94,
+       "support_kind": "evidence",
+       "evidence": [
+        {
+         "source_id": "who-hpv",
+         "quote": "vaccination before age 17 was associated with an 88% lower risk of invasive cervical cancer",
+         "url": "https://www.who.int/news-room/fact-sheets/detail/human-papilloma-virus-and-cancer",
+         "method": "quote",
+         "verified": true
+        }
+       ],
+       "rationale": "'88% lower risk' and '88% reduction' express the same figure.",
+       "error": null,
+       "model": "verifier/gemini-3.1-flash-lite",
+       "fallback": false
+      },
+      {
+       "detector": "consistency",
+       "claim_id": "c_c0c1bef45c68",
+       "verdict": "SUPPORTED",
+       "confidence": 0.8,
+       "support_kind": "consistency",
+       "evidence": [],
+       "rationale": "3 of 3 resampled answers give 88%.",
+       "error": null,
+       "model": "verifier/gemini-3.1-flash-lite",
+       "fallback": false
+      }
+     ],
+     "risk": 0.06,
+     "pass_index": 0
+    }
+   }
+  },
+  {
+   "type": "claim.verdict",
+   "run_id": "run_demo_hpv01",
+   "seq": 15,
+   "ts": 1791561608.95,
+   "data": {
+    "pass_index": 0,
+    "result": {
+     "claim": {
+      "id": "c_b1588dab7b54",
+      "text": "94% of girls aged 9-14 worldwide have received at least one HPV vaccine dose.",
+      "anchor": "Globally, 94% of girls aged 9–14 have now received at least one dose",
+      "span": [
+       384,
+       452
+      ],
+      "kind": "numeric",
+      "checkworthy": true
+     },
+     "status": "UNSUPPORTED",
+     "verdicts": [
+      {
+       "detector": "grounding",
+       "claim_id": "c_b1588dab7b54",
+       "verdict": "SUPPORTED",
+       "confidence": 0.55,
+       "support_kind": "evidence",
+       "evidence": [
+        {
+         "source_id": "who-hpv",
+         "quote": "94% of girls aged 9-14 have received at least one dose",
+         "url": "https://www.who.int/news-room/fact-sheets/detail/human-papilloma-virus-and-cancer",
+         "method": "quote",
+         "verified": false
+        }
+       ],
+       "rationale": "Judge reported a supporting quote.",
+       "error": null,
+       "model": "verifier/gemini-3.1-flash-lite",
+       "fallback": false
+      },
+      {
+       "detector": "consistency",
+       "claim_id": "c_b1588dab7b54",
+       "verdict": "NOT_FOUND",
+       "confidence": 0.6,
+       "support_kind": "consistency",
+       "evidence": [],
+       "rationale": "Resampled answers give 15%, 21% and 27%.",
+       "error": null,
+       "model": "verifier/gemini-3.1-flash-lite",
+       "fallback": false
+      }
+     ],
+     "risk": 0.78,
+     "pass_index": 0
+    }
+   }
+  },
+  {
+   "type": "claim.verdict",
+   "run_id": "run_demo_hpv01",
+   "seq": 16,
+   "ts": 1791561609.65,
+   "data": {
+    "pass_index": 0,
+    "result": {
+     "claim": {
+      "id": "c_773c5547c5ad",
+      "text": "The HPV vaccine likely reduces other HPV-related cancers such as oropharyngeal cancer.",
+      "anchor": "also likely to reduce other HPV-related cancers, such as oropharyngeal cancer",
+      "span": [
+       599,
+       676
+      ],
+      "kind": "causal",
+      "checkworthy": true
+     },
+     "status": "LIKELY",
+     "verdicts": [
+      {
+       "detector": "grounding",
+       "claim_id": "c_773c5547c5ad",
+       "verdict": "NOT_FOUND",
+       "confidence": 0.62,
+       "support_kind": "evidence",
+       "evidence": [],
+       "rationale": "The source only discusses cervical cancer.",
+       "error": null,
+       "model": "verifier/gemini-3.1-flash-lite",
+       "fallback": false
+      },
+      {
+       "detector": "consistency",
+       "claim_id": "c_773c5547c5ad",
+       "verdict": "SUPPORTED",
+       "confidence": 0.74,
+       "support_kind": "consistency",
+       "evidence": [],
+       "rationale": "3 of 3 resampled answers agree; no source evidence.",
+       "error": null,
+       "model": "anthropic/claude-opus-5",
+       "fallback": true
+      }
+     ],
+     "risk": 0.3,
+     "pass_index": 0
+    }
+   }
+  },
+  {
+   "type": "claim.verdict",
+   "run_id": "run_demo_hpv01",
+   "seq": 17,
+   "ts": 1791561610.35,
+   "data": {
+    "pass_index": 0,
+    "result": {
+     "claim": {
+      "id": "c_7d2846a45cf9",
+      "text": "HPV vaccine protection lasts at least 12 years after vaccination.",
+      "anchor": "Protection has been shown to last at least 12 years after vaccination",
+      "span": [
+       513,
+       582
+      ],
+      "kind": "numeric",
+      "checkworthy": true
+     },
+     "status": "UNVERIFIABLE",
+     "verdicts": [
+      {
+       "detector": "grounding",
+       "claim_id": "c_7d2846a45cf9",
+       "verdict": "UNVERIFIABLE",
+       "confidence": 0.0,
+       "support_kind": "evidence",
+       "evidence": [],
+       "rationale": null,
+       "error": "LLMUnavailableError: verifier gateway returned 503 Service Unavailable after 2 retries",
+       "model": "verifier/gemini-3.1-flash-lite",
+       "fallback": false
+      },
+      {
+       "detector": "consistency",
+       "claim_id": "c_7d2846a45cf9",
+       "verdict": "UNVERIFIABLE",
+       "confidence": 0.0,
+       "support_kind": "evidence",
+       "evidence": [],
+       "rationale": null,
+       "error": "LLMTimeoutError: consistency samples did not finish within 30 s",
+       "model": "anthropic/claude-opus-5",
+       "fallback": true
+      }
+     ],
+     "risk": 0.5,
+     "pass_index": 0
+    }
+   }
+  },
+  {
+   "type": "repair.applied",
+   "run_id": "run_demo_hpv01",
+   "seq": 18,
+   "ts": 1791561611.95,
+   "data": {
+    "pass_index": 0,
+    "repair": {
+     "claim_id": "c_6ec36c969222",
+     "op": "correct",
+     "before": " This finding was confirmed by Lindqvist et al. (2021), “Long-term HPV vaccine efficacy in Nordic cohorts,” The Lancet Oncology, doi:10.1016/S1470-2045(21)00987-3.",
+     "after": " The study was published by Lei et al. in the New England Journal of Medicine in 2020.",
+     "span": [
+      220,
+      383
+     ],
+     "reason": "The cited DOI does not resolve (HTTP 404), so the Lindqvist et al. reference appears fabricated. Replaced with the study your source names.",
+     "evidence": [
+      {
+       "source_id": "who-hpv",
+       "quote": "Lei et al., New England Journal of Medicine, 2020",
+       "url": "https://www.who.int/news-room/fact-sheets/detail/human-papilloma-virus-and-cancer",
+       "method": "quote",
+       "verified": true
+      }
+     ],
+     "pass_index": 0
+    },
+    "draft": "The HPV vaccine is highly effective at preventing cervical cancer. A 2020 Swedish registry study of 1.7 million women found that vaccination before age 17 was associated with an 88% reduction in invasive cervical cancer. The study was published by Lei et al. in the New England Journal of Medicine in 2020. Globally, 94% of girls aged 9–14 have now received at least one dose. WHO recommends a single-dose schedule for girls aged 9–14. Protection has been shown to last at least 12 years after vaccination. The vaccine is also likely to reduce other HPV-related cancers, such as oropharyngeal cancer."
+   }
+  },
+  {
+   "type": "repair.applied",
+   "run_id": "run_demo_hpv01",
+   "seq": 19,
+   "ts": 1791561612.35,
+   "data": {
+    "pass_index": 0,
+    "repair": {
+     "claim_id": "c_b1588dab7b54",
+     "op": "remove",
+     "before": " Globally, 94% of girls aged 9–14 have now received at least one dose.",
+     "after": "",
+     "span": [
+      383,
+      453
+     ],
+     "reason": "No verified evidence for the 94% coverage figure; the quoted support is not in the source, which gives 27% for 2023. Removed.",
+     "evidence": [],
+     "pass_index": 0
+    },
+    "draft": "The HPV vaccine is highly effective at preventing cervical cancer. A 2020 Swedish registry study of 1.7 million women found that vaccination before age 17 was associated with an 88% reduction in invasive cervical cancer. The study was published by Lei et al. in the New England Journal of Medicine in 2020. WHO recommends a single-dose schedule for girls aged 9–14. Protection has been shown to last at least 12 years after vaccination. The vaccine is also likely to reduce other HPV-related cancers, such as oropharyngeal cancer."
+   }
+  },
+  {
+   "type": "pass.started",
+   "run_id": "run_demo_hpv01",
+   "seq": 20,
+   "ts": 1791561612.85,
+   "data": {
+    "index": 1,
+    "draft": "The HPV vaccine is highly effective at preventing cervical cancer. A 2020 Swedish registry study of 1.7 million women found that vaccination before age 17 was associated with an 88% reduction in invasive cervical cancer. The study was published by Lei et al. in the New England Journal of Medicine in 2020. WHO recommends a single-dose schedule for girls aged 9–14. Protection has been shown to last at least 12 years after vaccination. The vaccine is also likely to reduce other HPV-related cancers, such as oropharyngeal cancer."
+   }
+  },
+  {
+   "type": "claim.extracted",
+   "run_id": "run_demo_hpv01",
+   "seq": 21,
+   "ts": 1791561613.85,
+   "data": {
+    "pass_index": 1,
+    "claim": {
+     "id": "c_8aa875549d48",
+     "text": "The HPV vaccine is highly effective at preventing cervical cancer.",
+     "anchor": "The HPV vaccine is highly effective at preventing cervical cancer",
+     "span": [
+      0,
+      65
+     ],
+     "kind": "causal",
+     "checkworthy": true
+    }
+   }
+  },
+  {
+   "type": "claim.extracted",
+   "run_id": "run_demo_hpv01",
+   "seq": 22,
+   "ts": 1791561613.95,
+   "data": {
+    "pass_index": 1,
+    "claim": {
+     "id": "c_1a2808d0aee5",
+     "text": "A 2020 Swedish registry study covered 1.7 million women.",
+     "anchor": "A 2020 Swedish registry study of 1.7 million women",
+     "span": [
+      67,
+      117
+     ],
+     "kind": "numeric",
+     "checkworthy": true
+    }
+   }
+  },
+  {
+   "type": "claim.extracted",
+   "run_id": "run_demo_hpv01",
+   "seq": 23,
+   "ts": 1791561614.05,
+   "data": {
+    "pass_index": 1,
+    "claim": {
+     "id": "c_c0c1bef45c68",
+     "text": "HPV vaccination before age 17 was associated with an 88% reduction in invasive cervical cancer in the Swedish study.",
+     "anchor": "vaccination before age 17 was associated with an 88% reduction in invasive cervical cancer",
+     "span": [
+      129,
+      219
+     ],
+     "kind": "numeric",
+     "checkworthy": true
+    }
+   }
+  },
+  {
+   "type": "claim.extracted",
+   "run_id": "run_demo_hpv01",
+   "seq": 24,
+   "ts": 1791561614.15,
+   "data": {
+    "pass_index": 1,
+    "claim": {
+     "id": "c_d10f6e7f8b93",
+     "text": "Lei et al. published the Swedish study in the New England Journal of Medicine in 2020.",
+     "anchor": "The study was published by Lei et al. in the New England Journal of Medicine in 2020",
+     "span": [
+      221,
+      305
+     ],
+     "kind": "citation",
+     "checkworthy": true
+    }
+   }
+  },
+  {
+   "type": "claim.extracted",
+   "run_id": "run_demo_hpv01",
+   "seq": 25,
+   "ts": 1791561614.25,
+   "data": {
+    "pass_index": 1,
+    "claim": {
+     "id": "c_ef5302d1d79c",
+     "text": "WHO recommends a single-dose HPV vaccine schedule for girls aged 9-14.",
+     "anchor": "WHO recommends a single-dose schedule for girls aged 9–14",
+     "span": [
+      307,
+      364
+     ],
+     "kind": "entity",
+     "checkworthy": true
+    }
+   }
+  },
+  {
+   "type": "claim.extracted",
+   "run_id": "run_demo_hpv01",
+   "seq": 26,
+   "ts": 1791561614.35,
+   "data": {
+    "pass_index": 1,
+    "claim": {
+     "id": "c_7d2846a45cf9",
+     "text": "HPV vaccine protection lasts at least 12 years after vaccination.",
+     "anchor": "Protection has been shown to last at least 12 years after vaccination",
+     "span": [
+      366,
+      435
+     ],
+     "kind": "numeric",
+     "checkworthy": true
+    }
+   }
+  },
+  {
+   "type": "claim.extracted",
+   "run_id": "run_demo_hpv01",
+   "seq": 27,
+   "ts": 1791561614.45,
+   "data": {
+    "pass_index": 1,
+    "claim": {
+     "id": "c_773c5547c5ad",
+     "text": "The HPV vaccine likely reduces other HPV-related cancers such as oropharyngeal cancer.",
+     "anchor": "also likely to reduce other HPV-related cancers, such as oropharyngeal cancer",
+     "span": [
+      452,
+      529
+     ],
+     "kind": "causal",
+     "checkworthy": true
+    }
+   }
+  },
+  {
+   "type": "claim.verdict",
+   "run_id": "run_demo_hpv01",
+   "seq": 28,
+   "ts": 1791561615.85,
+   "data": {
+    "pass_index": 1,
+    "result": {
+     "claim": {
+      "id": "c_d10f6e7f8b93",
+      "text": "Lei et al. published the Swedish study in the New England Journal of Medicine in 2020.",
+      "anchor": "The study was published by Lei et al. in the New England Journal of Medicine in 2020",
+      "span": [
+       221,
+       305
+      ],
+      "kind": "citation",
+      "checkworthy": true
+     },
+     "status": "SUPPORTED",
+     "verdicts": [
+      {
+       "detector": "grounding",
+       "claim_id": "c_d10f6e7f8b93",
+       "verdict": "SUPPORTED",
+       "confidence": 0.96,
+       "support_kind": "evidence",
+       "evidence": [
+        {
+         "source_id": "who-hpv",
+         "quote": "Lei et al., New England Journal of Medicine, 2020",
+         "url": "https://www.who.int/news-room/fact-sheets/detail/human-papilloma-virus-and-cancer",
+         "method": "quote",
+         "verified": true
+        }
+       ],
+       "rationale": "Source cites Lei et al., NEJM, 2020.",
+       "error": null,
+       "model": "verifier/gemini-3.1-flash-lite",
+       "fallback": false
+      },
+      {
+       "detector": "consistency",
+       "claim_id": "c_d10f6e7f8b93",
+       "verdict": "SUPPORTED",
+       "confidence": 0.81,
+       "support_kind": "consistency",
+       "evidence": [],
+       "rationale": "3 of 3 resampled answers agree.",
+       "error": null,
+       "model": "verifier/gemini-3.1-flash-lite",
+       "fallback": false
+      }
+     ],
+     "risk": 0.04,
+     "pass_index": 1
+    }
+   }
+  },
+  {
+   "type": "alert.raised",
+   "run_id": "run_demo_hpv01",
+   "seq": 29,
+   "ts": 1791561616.15,
+   "data": {
+    "alert": {
+     "severity": "high",
+     "claim_ids": [
+      "c_6ec36c969222"
+     ],
+     "message": "1 citation could not be found: its DOI does not resolve. sAIfe replaced it with the study named in your source. Check the reference before reusing it."
+    }
+   }
+  },
+  {
+   "type": "alert.raised",
+   "run_id": "run_demo_hpv01",
+   "seq": 30,
+   "ts": 1791561616.25,
+   "data": {
+    "alert": {
+     "severity": "warning",
+     "claim_ids": [
+      "c_b1588dab7b54"
+     ],
+     "message": "1 statistic (94% global coverage) could not be verified and was removed. Check the original source before citing a coverage figure."
+    }
+   }
+  },
+  {
+   "type": "alert.raised",
+   "run_id": "run_demo_hpv01",
+   "seq": 31,
+   "ts": 1791561616.35,
+   "data": {
+    "alert": {
+     "severity": "warning",
+     "claim_ids": [
+      "c_7d2846a45cf9"
+     ],
+     "message": "1 claim could not be checked because the verifier was unavailable. It is kept and marked Unverifiable. Confirm the 12-year figure independently."
+    }
+   }
+  },
+  {
+   "type": "alert.raised",
+   "run_id": "run_demo_hpv01",
+   "seq": 32,
+   "ts": 1791561616.45,
+   "data": {
+    "alert": {
+     "severity": "info",
+     "claim_ids": [
+      "c_773c5547c5ad",
+      "c_7d2846a45cf9"
+     ],
+     "message": "The consistency judge fell back from gemini-3.1-flash-lite to claude-opus-5 during an outage, so those checks were not cross-provider. Treat the Likely claim as unconfirmed."
+    }
+   }
+  },
+  {
+   "type": "run.completed",
+   "run_id": "run_demo_hpv01",
+   "seq": 33,
+   "ts": 1791561616.75,
+   "data": {
+    "status": "CAUTION",
+    "report": {
+     "run_id": "run_demo_hpv01",
+     "status": "CAUTION",
+     "preset": "balanced",
+     "question": "How effective is the HPV vaccine at preventing cervical cancer? Cite a study.",
+     "original_draft": "The HPV vaccine is highly effective at preventing cervical cancer. A 2020 Swedish registry study of 1.7 million women found that vaccination before age 17 was associated with an 88% reduction in invasive cervical cancer. This finding was confirmed by Lindqvist et al. (2021), “Long-term HPV vaccine efficacy in Nordic cohorts,” The Lancet Oncology, doi:10.1016/S1470-2045(21)00987-3. Globally, 94% of girls aged 9–14 have now received at least one dose. WHO recommends a single-dose schedule for girls aged 9–14. Protection has been shown to last at least 12 years after vaccination. The vaccine is also likely to reduce other HPV-related cancers, such as oropharyngeal cancer.",
+     "final_answer": "The HPV vaccine is highly effective at preventing cervical cancer. A 2020 Swedish registry study of 1.7 million women found that vaccination before age 17 was associated with an 88% reduction in invasive cervical cancer. The study was published by Lei et al. in the New England Journal of Medicine in 2020. WHO recommends a single-dose schedule for girls aged 9–14. Protection has been shown to last at least 12 years after vaccination. The vaccine is also likely to reduce other HPV-related cancers, such as oropharyngeal cancer.",
+     "claims": [
+      {
+       "claim": {
+        "id": "c_8aa875549d48",
+        "text": "The HPV vaccine is highly effective at preventing cervical cancer.",
+        "anchor": "The HPV vaccine is highly effective at preventing cervical cancer",
+        "span": [
+         0,
+         65
+        ],
+        "kind": "causal",
+        "checkworthy": true
+       },
+       "status": "SUPPORTED",
+       "verdicts": [
+        {
+         "detector": "grounding",
+         "claim_id": "c_8aa875549d48",
+         "verdict": "SUPPORTED",
+         "confidence": 0.93,
+         "support_kind": "evidence",
+         "evidence": [
+          {
+           "source_id": "who-hpv",
+           "quote": "vaccines are highly effective at preventing infection with the HPV types that cause most cervical cancers",
+           "url": "https://www.who.int/news-room/fact-sheets/detail/human-papilloma-virus-and-cancer",
+           "method": "quote",
+           "verified": true
+          }
+         ],
+         "rationale": "The source states the vaccines are highly effective against the HPV types behind most cervical cancers.",
+         "error": null,
+         "model": "verifier/gemini-3.1-flash-lite",
+         "fallback": false
+        },
+        {
+         "detector": "consistency",
+         "claim_id": "c_8aa875549d48",
+         "verdict": "SUPPORTED",
+         "confidence": 0.9,
+         "support_kind": "consistency",
+         "evidence": [],
+         "rationale": "3 of 3 resampled answers agree.",
+         "error": null,
+         "model": "verifier/gemini-3.1-flash-lite",
+         "fallback": false
+        }
+       ],
+       "risk": 0.05,
+       "pass_index": 0
+      },
+      {
+       "claim": {
+        "id": "c_1a2808d0aee5",
+        "text": "A 2020 Swedish registry study covered 1.7 million women.",
+        "anchor": "A 2020 Swedish registry study of 1.7 million women",
+        "span": [
+         67,
+         117
+        ],
+        "kind": "numeric",
+        "checkworthy": true
+       },
+       "status": "SUPPORTED",
+       "verdicts": [
+        {
+         "detector": "grounding",
+         "claim_id": "c_1a2808d0aee5",
+         "verdict": "SUPPORTED",
+         "confidence": 0.95,
+         "support_kind": "evidence",
+         "evidence": [
+          {
+           "source_id": "who-hpv",
+           "quote": "A Swedish nationwide registry study of 1.7 million women and girls",
+           "url": "https://www.who.int/news-room/fact-sheets/detail/human-papilloma-virus-and-cancer",
+           "method": "quote",
+           "verified": true
+          }
+         ],
+         "rationale": "Source gives the same cohort size.",
+         "error": null,
+         "model": "verifier/gemini-3.1-flash-lite",
+         "fallback": false
+        },
+        {
+         "detector": "consistency",
+         "claim_id": "c_1a2808d0aee5",
+         "verdict": "SUPPORTED",
+         "confidence": 0.86,
+         "support_kind": "consistency",
+         "evidence": [],
+         "rationale": "3 of 3 resampled answers agree.",
+         "error": null,
+         "model": "verifier/gemini-3.1-flash-lite",
+         "fallback": false
+        }
+       ],
+       "risk": 0.04,
+       "pass_index": 0
+      },
+      {
+       "claim": {
+        "id": "c_c0c1bef45c68",
+        "text": "HPV vaccination before age 17 was associated with an 88% reduction in invasive cervical cancer in the Swedish study.",
+        "anchor": "vaccination before age 17 was associated with an 88% reduction in invasive cervical cancer",
+        "span": [
+         129,
+         219
+        ],
+        "kind": "numeric",
+        "checkworthy": true
+       },
+       "status": "SUPPORTED",
+       "verdicts": [
+        {
+         "detector": "grounding",
+         "claim_id": "c_c0c1bef45c68",
+         "verdict": "SUPPORTED",
+         "confidence": 0.94,
+         "support_kind": "evidence",
+         "evidence": [
+          {
+           "source_id": "who-hpv",
+           "quote": "vaccination before age 17 was associated with an 88% lower risk of invasive cervical cancer",
+           "url": "https://www.who.int/news-room/fact-sheets/detail/human-papilloma-virus-and-cancer",
+           "method": "quote",
+           "verified": true
+          }
+         ],
+         "rationale": "'88% lower risk' and '88% reduction' express the same figure.",
+         "error": null,
+         "model": "verifier/gemini-3.1-flash-lite",
+         "fallback": false
+        },
+        {
+         "detector": "consistency",
+         "claim_id": "c_c0c1bef45c68",
+         "verdict": "SUPPORTED",
+         "confidence": 0.8,
+         "support_kind": "consistency",
+         "evidence": [],
+         "rationale": "3 of 3 resampled answers give 88%.",
+         "error": null,
+         "model": "verifier/gemini-3.1-flash-lite",
+         "fallback": false
+        }
+       ],
+       "risk": 0.06,
+       "pass_index": 0
+      },
+      {
+       "claim": {
+        "id": "c_d10f6e7f8b93",
+        "text": "Lei et al. published the Swedish study in the New England Journal of Medicine in 2020.",
+        "anchor": "The study was published by Lei et al. in the New England Journal of Medicine in 2020",
+        "span": [
+         221,
+         305
+        ],
+        "kind": "citation",
+        "checkworthy": true
+       },
+       "status": "SUPPORTED",
+       "verdicts": [
+        {
+         "detector": "grounding",
+         "claim_id": "c_d10f6e7f8b93",
+         "verdict": "SUPPORTED",
+         "confidence": 0.96,
+         "support_kind": "evidence",
+         "evidence": [
+          {
+           "source_id": "who-hpv",
+           "quote": "Lei et al., New England Journal of Medicine, 2020",
+           "url": "https://www.who.int/news-room/fact-sheets/detail/human-papilloma-virus-and-cancer",
+           "method": "quote",
+           "verified": true
+          }
+         ],
+         "rationale": "Source cites Lei et al., NEJM, 2020.",
+         "error": null,
+         "model": "verifier/gemini-3.1-flash-lite",
+         "fallback": false
+        },
+        {
+         "detector": "consistency",
+         "claim_id": "c_d10f6e7f8b93",
+         "verdict": "SUPPORTED",
+         "confidence": 0.81,
+         "support_kind": "consistency",
+         "evidence": [],
+         "rationale": "3 of 3 resampled answers agree.",
+         "error": null,
+         "model": "verifier/gemini-3.1-flash-lite",
+         "fallback": false
+        }
+       ],
+       "risk": 0.04,
+       "pass_index": 1
+      },
+      {
+       "claim": {
+        "id": "c_ef5302d1d79c",
+        "text": "WHO recommends a single-dose HPV vaccine schedule for girls aged 9-14.",
+        "anchor": "WHO recommends a single-dose schedule for girls aged 9–14",
+        "span": [
+         454,
+         511
+        ],
+        "kind": "entity",
+        "checkworthy": true
+       },
+       "status": "SUPPORTED",
+       "verdicts": [
+        {
+         "detector": "grounding",
+         "claim_id": "c_ef5302d1d79c",
+         "verdict": "SUPPORTED",
+         "confidence": 0.92,
+         "support_kind": "evidence",
+         "evidence": [
+          {
+           "source_id": "who-hpv",
+           "quote": "WHO has recommended a single-dose schedule for girls aged 9-14 years",
+           "url": "https://www.who.int/news-room/fact-sheets/detail/human-papilloma-virus-and-cancer",
+           "method": "quote",
+           "verified": true
+          }
+         ],
+         "rationale": "Source states the single-dose recommendation.",
+         "error": null,
+         "model": "verifier/gemini-3.1-flash-lite",
+         "fallback": false
+        },
+        {
+         "detector": "consistency",
+         "claim_id": "c_ef5302d1d79c",
+         "verdict": "SUPPORTED",
+         "confidence": 0.83,
+         "support_kind": "consistency",
+         "evidence": [],
+         "rationale": "3 of 3 resampled answers agree.",
+         "error": null,
+         "model": "verifier/gemini-3.1-flash-lite",
+         "fallback": false
+        }
+       ],
+       "risk": 0.05,
+       "pass_index": 0
+      },
+      {
+       "claim": {
+        "id": "c_7d2846a45cf9",
+        "text": "HPV vaccine protection lasts at least 12 years after vaccination.",
+        "anchor": "Protection has been shown to last at least 12 years after vaccination",
+        "span": [
+         513,
+         582
+        ],
+        "kind": "numeric",
+        "checkworthy": true
+       },
+       "status": "UNVERIFIABLE",
+       "verdicts": [
+        {
+         "detector": "grounding",
+         "claim_id": "c_7d2846a45cf9",
+         "verdict": "UNVERIFIABLE",
+         "confidence": 0.0,
+         "support_kind": "evidence",
+         "evidence": [],
+         "rationale": null,
+         "error": "LLMUnavailableError: verifier gateway returned 503 Service Unavailable after 2 retries",
+         "model": "verifier/gemini-3.1-flash-lite",
+         "fallback": false
+        },
+        {
+         "detector": "consistency",
+         "claim_id": "c_7d2846a45cf9",
+         "verdict": "UNVERIFIABLE",
+         "confidence": 0.0,
+         "support_kind": "evidence",
+         "evidence": [],
+         "rationale": null,
+         "error": "LLMTimeoutError: consistency samples did not finish within 30 s",
+         "model": "anthropic/claude-opus-5",
+         "fallback": true
+        }
+       ],
+       "risk": 0.5,
+       "pass_index": 0
+      },
+      {
+       "claim": {
+        "id": "c_773c5547c5ad",
+        "text": "The HPV vaccine likely reduces other HPV-related cancers such as oropharyngeal cancer.",
+        "anchor": "also likely to reduce other HPV-related cancers, such as oropharyngeal cancer",
+        "span": [
+         599,
+         676
+        ],
+        "kind": "causal",
+        "checkworthy": true
+       },
+       "status": "LIKELY",
+       "verdicts": [
+        {
+         "detector": "grounding",
+         "claim_id": "c_773c5547c5ad",
+         "verdict": "NOT_FOUND",
+         "confidence": 0.62,
+         "support_kind": "evidence",
+         "evidence": [],
+         "rationale": "The source only discusses cervical cancer.",
+         "error": null,
+         "model": "verifier/gemini-3.1-flash-lite",
+         "fallback": false
+        },
+        {
+         "detector": "consistency",
+         "claim_id": "c_773c5547c5ad",
+         "verdict": "SUPPORTED",
+         "confidence": 0.74,
+         "support_kind": "consistency",
+         "evidence": [],
+         "rationale": "3 of 3 resampled answers agree; no source evidence.",
+         "error": null,
+         "model": "anthropic/claude-opus-5",
+         "fallback": true
+        }
+       ],
+       "risk": 0.3,
+       "pass_index": 0
+      },
+      {
+       "claim": {
+        "id": "c_6ec36c969222",
+        "text": "Lindqvist et al. (2021), 'Long-term HPV vaccine efficacy in Nordic cohorts', The Lancet Oncology, doi:10.1016/S1470-2045(21)00987-3, confirmed the finding.",
+        "anchor": "This finding was confirmed by Lindqvist et al. (2021), “Long-term HPV vaccine efficacy in Nordic cohorts,” The Lancet Oncology, doi:10.1016/S1470-2045(21)00987-3",
+        "span": [
+         221,
+         382
+        ],
+        "kind": "citation",
+        "checkworthy": true
+       },
+       "status": "CONTRADICTED",
+       "verdicts": [
+        {
+         "detector": "deterministic",
+         "claim_id": "c_6ec36c969222",
+         "verdict": "CONTRADICTED",
+         "confidence": 0.99,
+         "support_kind": "computed",
+         "evidence": [
+          {
+           "source_id": "deterministic:doi",
+           "quote": "https://doi.org/10.1016/S1470-2045(21)00987-3 returned HTTP 404 (DOI not registered)",
+           "url": null,
+           "method": "computed",
+           "verified": true
+          }
+         ],
+         "rationale": "The cited DOI does not resolve.",
+         "error": null,
+         "model": null,
+         "fallback": false
+        },
+        {
+         "detector": "grounding",
+         "claim_id": "c_6ec36c969222",
+         "verdict": "NOT_FOUND",
+         "confidence": 0.7,
+         "support_kind": "evidence",
+         "evidence": [],
+         "rationale": "The source names Lei et al. (NEJM, 2020), not Lindqvist et al.",
+         "error": null,
+         "model": "verifier/gemini-3.1-flash-lite",
+         "fallback": false
+        },
+        {
+         "detector": "consistency",
+         "claim_id": "c_6ec36c969222",
+         "verdict": "NOT_FOUND",
+         "confidence": 0.66,
+         "support_kind": "consistency",
+         "evidence": [],
+         "rationale": "0 of 3 resampled answers mention this paper.",
+         "error": null,
+         "model": "verifier/gemini-3.1-flash-lite",
+         "fallback": false
+        }
+       ],
+       "risk": 0.97,
+       "pass_index": 0
+      },
+      {
+       "claim": {
+        "id": "c_b1588dab7b54",
+        "text": "94% of girls aged 9-14 worldwide have received at least one HPV vaccine dose.",
+        "anchor": "Globally, 94% of girls aged 9–14 have now received at least one dose",
+        "span": [
+         384,
+         452
+        ],
+        "kind": "numeric",
+        "checkworthy": true
+       },
+       "status": "UNSUPPORTED",
+       "verdicts": [
+        {
+         "detector": "grounding",
+         "claim_id": "c_b1588dab7b54",
+         "verdict": "SUPPORTED",
+         "confidence": 0.55,
+         "support_kind": "evidence",
+         "evidence": [
+          {
+           "source_id": "who-hpv",
+           "quote": "94% of girls aged 9-14 have received at least one dose",
+           "url": "https://www.who.int/news-room/fact-sheets/detail/human-papilloma-virus-and-cancer",
+           "method": "quote",
+           "verified": false
+          }
+         ],
+         "rationale": "Judge reported a supporting quote.",
+         "error": null,
+         "model": "verifier/gemini-3.1-flash-lite",
+         "fallback": false
+        },
+        {
+         "detector": "consistency",
+         "claim_id": "c_b1588dab7b54",
+         "verdict": "NOT_FOUND",
+         "confidence": 0.6,
+         "support_kind": "consistency",
+         "evidence": [],
+         "rationale": "Resampled answers give 15%, 21% and 27%.",
+         "error": null,
+         "model": "verifier/gemini-3.1-flash-lite",
+         "fallback": false
+        }
+       ],
+       "risk": 0.78,
+       "pass_index": 0
+      }
+     ],
+     "passes": [
+      {
+       "index": 0,
+       "draft": "The HPV vaccine is highly effective at preventing cervical cancer. A 2020 Swedish registry study of 1.7 million women found that vaccination before age 17 was associated with an 88% reduction in invasive cervical cancer. This finding was confirmed by Lindqvist et al. (2021), “Long-term HPV vaccine efficacy in Nordic cohorts,” The Lancet Oncology, doi:10.1016/S1470-2045(21)00987-3. Globally, 94% of girls aged 9–14 have now received at least one dose. WHO recommends a single-dose schedule for girls aged 9–14. Protection has been shown to last at least 12 years after vaccination. The vaccine is also likely to reduce other HPV-related cancers, such as oropharyngeal cancer.",
+       "claim_ids": [
+        "c_8aa875549d48",
+        "c_1a2808d0aee5",
+        "c_c0c1bef45c68",
+        "c_6ec36c969222",
+        "c_b1588dab7b54",
+        "c_ef5302d1d79c",
+        "c_7d2846a45cf9",
+        "c_773c5547c5ad"
+       ],
+       "verified_ids": [
+        "c_8aa875549d48",
+        "c_1a2808d0aee5",
+        "c_c0c1bef45c68",
+        "c_6ec36c969222",
+        "c_b1588dab7b54",
+        "c_ef5302d1d79c",
+        "c_7d2846a45cf9",
+        "c_773c5547c5ad"
+       ],
+       "flagged_ids": [
+        "c_6ec36c969222",
+        "c_b1588dab7b54"
+       ],
+       "repairs": [
+        {
+         "claim_id": "c_6ec36c969222",
+         "op": "correct",
+         "before": " This finding was confirmed by Lindqvist et al. (2021), “Long-term HPV vaccine efficacy in Nordic cohorts,” The Lancet Oncology, doi:10.1016/S1470-2045(21)00987-3.",
+         "after": " The study was published by Lei et al. in the New England Journal of Medicine in 2020.",
+         "span": [
+          220,
+          383
+         ],
+         "reason": "The cited DOI does not resolve (HTTP 404), so the Lindqvist et al. reference appears fabricated. Replaced with the study your source names.",
+         "evidence": [
+          {
+           "source_id": "who-hpv",
+           "quote": "Lei et al., New England Journal of Medicine, 2020",
+           "url": "https://www.who.int/news-room/fact-sheets/detail/human-papilloma-virus-and-cancer",
+           "method": "quote",
+           "verified": true
+          }
+         ],
+         "pass_index": 0
+        },
+        {
+         "claim_id": "c_b1588dab7b54",
+         "op": "remove",
+         "before": " Globally, 94% of girls aged 9–14 have now received at least one dose.",
+         "after": "",
+         "span": [
+          383,
+          453
+         ],
+         "reason": "No verified evidence for the 94% coverage figure; the quoted support is not in the source, which gives 27% for 2023. Removed.",
+         "evidence": [],
+         "pass_index": 0
+        }
+       ],
+       "duration_s": 11.2
+      },
+      {
+       "index": 1,
+       "draft": "The HPV vaccine is highly effective at preventing cervical cancer. A 2020 Swedish registry study of 1.7 million women found that vaccination before age 17 was associated with an 88% reduction in invasive cervical cancer. The study was published by Lei et al. in the New England Journal of Medicine in 2020. WHO recommends a single-dose schedule for girls aged 9–14. Protection has been shown to last at least 12 years after vaccination. The vaccine is also likely to reduce other HPV-related cancers, such as oropharyngeal cancer.",
+       "claim_ids": [
+        "c_8aa875549d48",
+        "c_1a2808d0aee5",
+        "c_c0c1bef45c68",
+        "c_d10f6e7f8b93",
+        "c_ef5302d1d79c",
+        "c_7d2846a45cf9",
+        "c_773c5547c5ad"
+       ],
+       "verified_ids": [
+        "c_d10f6e7f8b93"
+       ],
+       "flagged_ids": [],
+       "repairs": [],
+       "duration_s": 4.1
+      }
+     ],
+     "repairs": [
+      {
+       "claim_id": "c_6ec36c969222",
+       "op": "correct",
+       "before": " This finding was confirmed by Lindqvist et al. (2021), “Long-term HPV vaccine efficacy in Nordic cohorts,” The Lancet Oncology, doi:10.1016/S1470-2045(21)00987-3.",
+       "after": " The study was published by Lei et al. in the New England Journal of Medicine in 2020.",
+       "span": [
+        220,
+        383
+       ],
+       "reason": "The cited DOI does not resolve (HTTP 404), so the Lindqvist et al. reference appears fabricated. Replaced with the study your source names.",
+       "evidence": [
+        {
+         "source_id": "who-hpv",
+         "quote": "Lei et al., New England Journal of Medicine, 2020",
+         "url": "https://www.who.int/news-room/fact-sheets/detail/human-papilloma-virus-and-cancer",
+         "method": "quote",
+         "verified": true
+        }
+       ],
+       "pass_index": 0
+      },
+      {
+       "claim_id": "c_b1588dab7b54",
+       "op": "remove",
+       "before": " Globally, 94% of girls aged 9–14 have now received at least one dose.",
+       "after": "",
+       "span": [
+        383,
+        453
+       ],
+       "reason": "No verified evidence for the 94% coverage figure; the quoted support is not in the source, which gives 27% for 2023. Removed.",
+       "evidence": [],
+       "pass_index": 0
+      }
+     ],
+     "alerts": [
+      {
+       "severity": "high",
+       "claim_ids": [
+        "c_6ec36c969222"
+       ],
+       "message": "1 citation could not be found: its DOI does not resolve. sAIfe replaced it with the study named in your source. Check the reference before reusing it."
+      },
+      {
+       "severity": "warning",
+       "claim_ids": [
+        "c_b1588dab7b54"
+       ],
+       "message": "1 statistic (94% global coverage) could not be verified and was removed. Check the original source before citing a coverage figure."
+      },
+      {
+       "severity": "warning",
+       "claim_ids": [
+        "c_7d2846a45cf9"
+       ],
+       "message": "1 claim could not be checked because the verifier was unavailable. It is kept and marked Unverifiable. Confirm the 12-year figure independently."
+      },
+      {
+       "severity": "info",
+       "claim_ids": [
+        "c_773c5547c5ad",
+        "c_7d2846a45cf9"
+       ],
+       "message": "The consistency judge fell back from gemini-3.1-flash-lite to claude-opus-5 during an outage, so those checks were not cross-provider. Treat the Likely claim as unconfirmed."
+      }
+     ],
+     "usage": {
+      "input_tokens": 48210,
+      "output_tokens": 6930,
+      "calls": 29,
+      "cost_usd": 0.214,
+      "wall_time_s": 17.6,
+      "by_model": {
+       "anthropic/claude-haiku-4-5": {
+        "input_tokens": 1840,
+        "output_tokens": 310
+       },
+       "anthropic/claude-opus-5": {
+        "input_tokens": 22410,
+        "output_tokens": 4280
+       },
+       "verifier/gemini-3.1-flash-lite": {
+        "input_tokens": 23960,
+        "output_tokens": 2340
+       }
+      }
+     },
+     "risk": 0.34,
+     "stop_cause": "resolved",
+     "verifier_diversity": false,
+     "fallbacks": [
+      {
+       "role": "consistency_judge",
+       "from_model": "verifier/gemini-3.1-flash-lite",
+       "to_model": "anthropic/claude-opus-5",
+       "reason": "LLMUnavailableError: verifier gateway returned 503 Service Unavailable"
+      }
+     ],
+     "trace_path": "runs/run_demo_hpv01.jsonl"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,1 @@
+The Eiffel Tower stands on the Champ de Mars in Paris. It was completed in 1901 for the World's Fair. The tower is 330 metres tall, including its antennas. It is painted gold every year by a team of 900 painters.

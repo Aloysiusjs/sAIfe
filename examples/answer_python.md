@@ -1,0 +1,1 @@
+Python was created by Guido van Rossum and first released in 1991. Python 3.0 came out in December 2008. You can parse JSON with json.loads, and 12 * 12 = 144. The function json.parse_fast is about twice as fast as json.loads.

@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    color-scheme: light dark;
+  }
+  body {
+    @apply bg-canvas font-sans text-ink-900 antialiased dark:bg-ink-950 dark:text-ink-100;
+  }
+  /* One visible focus ring everywhere, keyboard only. */
+  :focus-visible {
+    outline: 2px solid theme('colors.action.DEFAULT');
+    outline-offset: 2px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :focus-visible {
+      outline-color: #8fb3f0;
+    }
+  }
+  input:focus-visible,
+  select:focus-visible {
+    outline-offset: 0;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-lg border border-ink-200 bg-white shadow-panel dark:border-ink-800 dark:bg-ink-900 dark:shadow-none;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-1.5 rounded-md border border-ink-200 bg-white px-2.5 py-1.5 text-sm font-medium text-ink-700 hover:bg-ink-50 hover:text-ink-900 disabled:opacity-50 dark:border-ink-700 dark:bg-ink-900 dark:text-ink-200 dark:hover:bg-ink-800 dark:hover:text-white;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-1.5 rounded-md bg-action px-3 py-2 text-sm font-semibold text-white hover:bg-action-hover disabled:opacity-60;
+  }
+  .label-xs {
+    @apply text-2xs font-semibold uppercase tracking-wide text-ink-500 dark:text-ink-400;
+  }
+  .code-chip {
+    @apply rounded bg-ink-100 px-1 py-0.5 font-mono text-[0.8em] text-ink-800 dark:bg-ink-800 dark:text-ink-100;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

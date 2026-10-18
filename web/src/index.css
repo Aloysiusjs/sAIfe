@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-canvas font-sans text-ink-900 antialiased;
+  }
+  /* One visible focus ring everywhere, keyboard only. */
+  :focus-visible {
+    outline: 2px solid theme('colors.action.DEFAULT');
+    outline-offset: 2px;
+  }
+  textarea:focus-visible,
+  input:focus-visible {
+    outline-offset: 0;
+  }
+}
+
+@layer components {
+  /* Highlights wrap across lines with their tint and underline intact. */
+  .claim-mark {
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+  .claim-mark:focus-visible {
+    outline: 2px solid theme('colors.ink.900');
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
